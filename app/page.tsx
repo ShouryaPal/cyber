@@ -46,9 +46,9 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <main className="w-full flex flex-col px-4 sm:px-40 py-8">
+      <main className="w-full flex flex-col px-4 sm:px-40 py-20">
         {/* Steps */}
-        <div className="py-8 sm:py-16 flex items-center justify-between">
+        <div className="py-4 sm:pb-20 sm:pt-8 flex items-center justify-between">
           <div className="flex items-center gap-1">
             <Image
               src={"/Location.svg"}
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
 
         {/* Payment Section */}
-        <div className="flex flex-col  sm:grid sm:grid-cols-2 gap-8">
+        <div className="flex flex-col  sm:grid sm:grid-cols-2 gap-20">
           {/* Summary Card */}
           <Card className="w-full order-2 sm:order-1">
             <CardHeader>
@@ -183,13 +183,7 @@ export default function Home() {
                 PayPal Credit
               </Button>
             </div>
-            <Image
-              src={"/image 65.svg"}
-              alt="card"
-              width={337}
-              height={190}
-              className="w-full h-auto"
-            />
+            <Image src={"/image 65.svg"} alt="card" width={337} height={190} />
             <Input
               className="w-full text-[#979797] placeholder:text-[#979797] h-12 border-[0.5px] border-[#CECECE] text-sm"
               placeholder="Cardholder Name"
